@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 import com.utils.CalculatorUtil;
 
+
+/**
+ * Console based Calculator Application
+ * 
+ * @author Nitin Gupta
+ *
+ */
 public class CalculatorApp {
 
 	public static void main(String[] args) {
