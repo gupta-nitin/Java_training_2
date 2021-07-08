@@ -12,6 +12,13 @@ public class InheritanceExample_1 {
 		p.marks = 58;;
 		p.subjects = "PCM";
 		
+/*		Employee e = new Employee();
+		e.name = "XYZ";
+		e.age = 56;
+		e.address = "India";
+		e.salary = 52000;
+		e.desigantion = "Manager";*/
+		
 	}
 
 }
@@ -22,8 +29,13 @@ class Student extends Person{
 	String subjects;
 	
 	public Student(){
-		super("asbc");
+		super("default-name");
 		System.out.println("Student class consutructor executed...");
+	}
+	
+	public int getMarks(){
+		
+		return marks;
 	}
 }
 
@@ -40,7 +52,7 @@ class Person{
 	
 	public Person(String name){
 		this.name = name;
-		System.out.println("Person class constructor executed....");
+		System.out.println("Person class parmeterized constructor executed....");
 	}
 	
 }
@@ -51,6 +63,10 @@ class Employee extends Person {
 	int salary;
 	String desigantion;
 	
+	
+	public Employee() {
+		System.out.println("Employee class constructor is called");
+	}
 }
 
 
