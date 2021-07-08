@@ -16,6 +16,7 @@ class Bike extends PertrolVehicle{
 	public void run(){
 		System.out.println("Run method of Bike");
 		super.run();
+		super.i = 100;
 	}
 	
 }
