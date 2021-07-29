@@ -14,7 +14,6 @@ public class RandomAccessExample {
 		try {
 			RandomAccessFile accessFile = new RandomAccessFile(relativeFilePath, "r");
 			String line = null;
-			accessFile.seek(28);
 			while ((line = accessFile.readLine()) != null) {
 				System.out.println(line + "----> " + accessFile.getFilePointer());
 			}
