@@ -1,0 +1,43 @@
+Menu - 
+***************Data Entry Application *****************
+1)Add Record
+2)Delete Record
+3)Display Data
+4)Save
+5)Exit
+*****************[Pre Loaded File Path passed as argument]****************************
+
+1)Add Record
+Enter Name		:
+Enter Age		:
+Enter Address	:
+
+2)Delete Record
+Please enter Id to delete
+o/p - success or failed
+
+3)Display Record
+No of Record - 
+Note : Based on the no. records will be displayed
+
+4)Save
+Please provide file-name to save data.
+
+5)Exit
+
+Note - When application launched we can provide the file-path, if file already exists the start adding data from end
+
+
+File  Structure will be 
+id	name	age	address
+101	ABC		10	Mumbai
+102	DEF		10	Pune
+103	GHI		10	Delhi
+
+
+---------------------------------Approach-------------------------------------------
+Java Component/Functinality - 
+Command line argument - to pass file path at application launch
+Swith case -  for menu 
+Collection will be used - Will read  data from provided file path and add data to the same list and on save we will save the file.
+FIle handling - Loading data/ Saving data

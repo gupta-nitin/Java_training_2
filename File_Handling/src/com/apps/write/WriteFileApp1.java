@@ -2,6 +2,7 @@ package com.apps.write;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 public class WriteFileApp1 {
@@ -31,4 +32,17 @@ public class WriteFileApp1 {
 
 	}
 
+	public void readFile(String relativeFilePath) {
+		try {
+			RandomAccessFile accessFile = new RandomAccessFile(relativeFilePath, "r");
+			String line = null;
+			while ((line = accessFile.readLine()) != null) {
+				System.out.println(line + "----> " + accessFile.getFilePointer());
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
+
